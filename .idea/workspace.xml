@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a742f41-e239-4535-8da9-888331966a40" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1jQK2yy4CX0apZuIOiN6rlVt02t" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a742f41-e239-4535-8da9-888331966a40" name="Default Changelist" comment="" />
+      <created>1603730671506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603730671506</updated>
+      <workItem from="1603730673046" duration="662000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="600" y="167" width="389" height="607" key="NewPhpClassDialog" timestamp="1603730743585">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="600" y="167" width="389" height="607" key="NewPhpClassDialog/0.27.1600.873@0.27.1600.873" timestamp="1603730743585" />
+    <state x="289" y="98" width="1022" height="744" key="SettingsEditor" timestamp="1603730682140">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="289" y="98" width="1022" height="744" key="SettingsEditor/0.27.1600.873@0.27.1600.873" timestamp="1603730682140" />
+  </component>
+</project>
