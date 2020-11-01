@@ -13,4 +13,4 @@ $sql = "INSERT INTO `categories` (`categoryId`, `title`, `description`)
         VALUES ('" . $id .  "', '" . $title . "', '" . $description ."')";
 $conn->query($sql);
 
-header("Location: http://127.0.0.1/Lab06/admin.php");
+header("Location: http://127.0.0.1/lab04/admin.php");
