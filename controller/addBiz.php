@@ -10,7 +10,7 @@ $bizName = $_POST['bName'];
 // Check if form is submitted successfully 
 if (isset($_POST["submit"])) {
     // Check if any option is selected 
-    if (isset($categories) && isset($bizName)) {
+    if ($categories != null && $bizName != null) {
         // Retrieving each selected option 
         $sqlAppendValue =" VALUES";
         foreach ($_POST['categories'] as $key => $category) {
@@ -46,6 +46,8 @@ if (isset($_POST["submit"])) {
            } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
            }
+    } else{
+        echo "Failed, insert all fields!";
     }
 }
 include("./../views/backToHomeForm.php");

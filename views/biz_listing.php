@@ -6,67 +6,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Biz</title>
+    <title>Biz Lists</title>
     <style>
         .left {
             float: left;
-            width: 50%;
+            width: 40%;
         }
 
         .right {
             float: right;
-            width: 50%;
+            width: 60%;
         }
 
         .right input {
             width: 100%;
-
         }
 
-        #categories {
+        #cate_in_biz_list {
             margin-top: 10px;
             padding: 5px;
             width: 80%;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #dddddd;
         }
     </style>
 
 </head>
 
 <body>
-    <h1>Business Registration</h1>
-    <?php 
+    <h1>Business Listings</h1>
+    <?php
     include("./backToHomeForm.php")
     ?>
     <hr>
     <div class="left">
-        Click on one, or Ctrl-click on multiple categories:
-        <form action="./../controller/addBiz.php" method="POST">
-            <select name='categories[]' id="categories" multiple size="8">
+        Click on a categories to check biz to do:
+        <form action="#" method="POST">
+            <select name='categories[]' id="cate_in_biz_list" size="15">
                 <?php
                 include("$_SERVER[DOCUMENT_ROOT]/lab04/controller/showAllCateList.php");
                 ?>
             </select>
-            <br>
-            <br>
-        </div>
-        <div class="right">
-            <label for="bName">Business name: </label>
-            <input type="text" name="bName"><br><br>
-            
-            <label for="address">Address: </label>
-        <input type="text" name="address"><br><br>
-        
-        <label for="city">City: </label>
-        <input type="text" name="city"><br><br>
-        
-        <label for="telephone">Telephone: </label>
-        <input type="text" name="telephone"><br><br>
-        
-        <label for="url">Url: </label>
-        <input type="text" name="url"><br><br>
+            <div>
+                <input type="submit" name="submit" value="SHOW ALL">
+            </div>
+        </form>
     </div>
-    <input type="submit" name="submit" value="Submit">
-    </form>
+    <div class="right">
+        <?php
+        include("$_SERVER[DOCUMENT_ROOT]/lab04/controller/showAllBizTable.php");
+        ?>
+    </div>
 </body>
 
 </html>
