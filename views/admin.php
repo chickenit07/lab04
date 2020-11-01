@@ -1,4 +1,4 @@
-<?php include("config.php") ?>
+<?php include("$_SERVER[DOCUMENT_ROOT]/lab04/config.php"); ?>
 <!doctype html>
 <html lang="en">
 
@@ -30,31 +30,12 @@
 <body>
     <h1> Category Administration </h1>
     <?php
-    $sql = "SELECT categoryId, title, description FROM business_service.categories";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        echo "<table>
-                <tr>
-                    <th>Category</th>
-                    <th>Title</th>
-                    <th>Description</th>
-                </tr>";
-        // output data of each row
-        while ($row = $result->fetch_assoc()) {
-            echo "<tr>
-                    <td>" . $row["categoryId"] . "</td>
-                    <td>" . $row["title"] . "</td>  
-                    <td>" . $row["description"] . "</td>
-                    </tr>";
-        }
-    } else {
-        echo "0 results";
-    }
-
-    $conn->close();
+        include("$_SERVER[DOCUMENT_ROOT]/lab04/controller/showAllCateTable.php");
+        include("./backToHomeForm.php")
     ?>
-    <form action="addCategory.php" method="POST">
+
+    <hr>
+    <form action="./../controller/addCategory.php" method="POST" >
         <tr>
             <td><input type="number" name="categoryID" size="70%" /></td>
             <td><input type="text" name="title" size="70%" /></td>
@@ -63,7 +44,7 @@
         <?php echo "</table>"; ?>
         <button type="submit"> Add Category</button>
     </form>
+    
 
 </body>
-
 </html>

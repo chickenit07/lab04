@@ -1,5 +1,6 @@
 <?php
-include("config.php");
+include("$_SERVER[DOCUMENT_ROOT]/lab04/config.php");
+
 $id =  $_POST["categoryID"];
 $title =  $_POST["title"];
 $description =  $_POST["description"];
@@ -13,4 +14,4 @@ $sql = "INSERT INTO `categories` (`categoryId`, `title`, `description`)
         VALUES ('" . $id .  "', '" . $title . "', '" . $description ."')";
 $conn->query($sql);
 
-header("Location: http://127.0.0.1/lab04/admin.php");
+header("Location: http://127.0.0.1/lab04/views/admin.php");
